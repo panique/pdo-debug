@@ -10,5 +10,8 @@
             "homepage": "http://careers.stackoverflow.com/panique",
             "role": "Developer"
         }
-    ]
+    ],
+    "autoload": {
+        "files": ["pdo-debug.php"]
+    }
 }
