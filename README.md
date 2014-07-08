@@ -19,7 +19,14 @@ and Mike (http://stackoverflow.com/users/1083889/mike) for creating the debugQue
 
 ## How to add to a project
 
-TODO
+As usual, require this via Composer (require-dev might be more useful as you definitly don't need this in
+production, right?):
+
+```json
+"require-dev": {
+    "panique/pdo-debug": "dev-master"
+}
+```
 
 ## How to use
 
