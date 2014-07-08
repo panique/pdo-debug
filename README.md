@@ -59,7 +59,7 @@ $query = $database_connection->prepare($sql);
 $query->execute($parameters);
 ```
 
-and debug / log the full SQL statement by using the global `debugPDO()` function. Make sure to pass the raw
+Now you can debug / log the full SQL statement by using the global `debugPDO()` function. Make sure to pass the raw
 SQL statement and the parameters array that contains proper keys and values.
 ```php
 echo debugPDO($sql, $parameters);
