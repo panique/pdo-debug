@@ -1,0 +1,14 @@
+{
+    "name": "panique/pdo-debug",
+    "description": "A super-simple function that returns the full SQL query from your PDO statements",
+    "keywords": ["pdo", "debug", "debugger", "log", "logger", "sql"],
+    "homepage": "https://github.com/panique/pdo-debug",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Panique",
+            "homepage": "http://careers.stackoverflow.com/panique",
+            "role": "Developer"
+        }
+    ]
+}
