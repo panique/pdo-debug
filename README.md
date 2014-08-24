@@ -72,3 +72,10 @@ INSERT INTO test (col1, col2, col3) VALUES ('hello', 123, NULL)
 ```
 
 Yeah!
+
+## Support the project (and others)
+
+Support this - and other - projects by donating a coffee via
+[PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P5YLUK4MW3LDG)
+or
+[Flattr](https://flattr.com/submit/auto?user_id=panique&url=https%3A%2F%2Fgithub.com%2Fpanique%2Fpdo-debug)
