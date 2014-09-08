@@ -1,9 +1,9 @@
 # pdo-debug
 
-Shows the SQL query constructed by PDO. Yeah!
+Shows the SQL query constructed by PDO. Seriously.
 The magic behind: A simple function that combines your parameters and the raw query.
-Please note that this is not a 100% perfect emulation, but it does the job for most common daily tasks.
-Way better than NOTHING!
+Please note that this is just an emulation, not the "real" result of PDO, but it does the job for nearly all common
+daily tasks. Way better than NOTHING!
 
 ## Features
 
