@@ -1,9 +1,8 @@
 # pdo-debug
 
-Shows the SQL query constructed by PDO. Seriously.
-The magic behind: A simple function that combines your parameters and the raw query.
-Please note that this is just an emulation, not the "real" result of PDO, but it does the job for nearly all common
-daily tasks. Way better than NOTHING!
+Shows the SQL query constructed by PDO. Seriously. The magic behind: A simple function that combines your parameters 
+and the raw query. Please note that this is just an emulation, not the "real" result of PDO, but it does the job for 
+nearly all common daily tasks. Way better than NOTHING!
 
 ## Features
 
@@ -19,12 +18,11 @@ and Mike (http://stackoverflow.com/users/1083889/mike) for creating the debugQue
 
 ## How to add to a project
 
-As usual, require this via Composer (require-dev might be more useful as you definitly don't need this in
-production, right?):
+As usual, require this via Composer (require-dev might be more useful as you definitely don't need this in production):
 
 ```json
 "require-dev": {
-    "panique/pdo-debug": "dev-master"
+    "panique/pdo-debug": "0.2"
 }
 ```
 
@@ -59,10 +57,12 @@ $query = $database_connection->prepare($sql);
 $query->execute($parameters);
 ```
 
-Now you can debug / log the full SQL statement by using the global `debugPDO()` function. Make sure to pass the raw
-SQL statement and the parameters array that contains proper keys and values.
+Now you can debug / log the full SQL statement by using the static method `show()` of the PdoDebugger class. Make sure 
+to pass the raw SQL statement and the parameters array that contains proper keys and values. Future releases might have
+a more professional way of handling this.
+
 ```php
-echo debugPDO($sql, $parameters);
+echo PdoDebugger::show($sql, $parameters);
 ```
 
 The result of this example will be:

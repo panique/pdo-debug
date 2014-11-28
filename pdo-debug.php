@@ -1,8 +1,20 @@
 <?php
 
-if (!function_exists('debugPDO')) {
-
-    function debugPDO($raw_sql, $parameters)
+/**
+ * Class PdoDebugger
+ *
+ * Emulates the PDO SQL statement in an extremely simple kind of way
+ */
+class PdoDebugger
+{
+    /**
+     * Returns the emulated SQL string
+     *
+     * @param $raw_sql
+     * @param $parameters
+     * @return mixed
+     */
+    static public function show($raw_sql, $parameters)
     {
         $keys = array();
         $values = $parameters;
