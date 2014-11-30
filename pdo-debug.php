@@ -23,7 +23,7 @@ class PdoDebugger
 
             // check if named parameters (':param') or anonymous parameters ('?') are used
             if (is_string($key)) {
-                $keys[] = '/:'.$key.'/';
+                $keys[] = '/'.$key.'/';
             } else {
                 $keys[] = '/[?]/';
             }
