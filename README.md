@@ -75,5 +75,4 @@ Yeah!
 
 ## Support the project (and others)
 
-Support this project - and others - by renting a server at [Host1Plus](https://affiliates.host1plus.com/ref/devmetal/36f4d828.html) or 
-[DigitalOcean](https://www.digitalocean.com/?refcode=40d978532a20). Thanks!
+Support this project - and others - by renting a server at [Host1Plus](https://affiliates.host1plus.com/ref/devmetal/36f4d828.html). Thanks!
