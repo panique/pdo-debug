@@ -75,7 +75,5 @@ Yeah!
 
 ## Support the project (and others)
 
-Support this - and other - projects by donating a coffee via
-[PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P5YLUK4MW3LDG)
-or
-[Flattr](https://flattr.com/submit/auto?user_id=panique&url=https%3A%2F%2Fgithub.com%2Fpanique%2Fpdo-debug)
+Support this project - and others - by renting a server at [Host1Plus](https://affiliates.host1plus.com/ref/devmetal/36f4d828.html) or 
+[DigitalOcean](https://www.digitalocean.com/?refcode=40d978532a20). Thanks!
