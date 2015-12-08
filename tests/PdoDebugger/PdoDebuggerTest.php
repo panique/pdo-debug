@@ -63,4 +63,15 @@ class PdoDebuggerTest extends PHPUnit_Framework_TestCase
         $res = PdoDebugger::show($sql, $params);
         $this->assertEquals($res, 'SELECT * FROM users WHERE username LIKE \'%jdoe%\' OR username LIKE \'%j.doe%\' OR email LIKE \'%jdoe%\'');
     }
+
+    public function testNumbers()
+    {
+        $sql = 'SELECT * FROM test WHERE float_val > :float AND int_val > :int';
+        $params = array(
+            'float' => 3.14159,
+            'int' => 42
+        );
+        $res = PdoDebugger::show($sql, $params);
+        $this->assertEquals($res, 'SELECT * FROM test WHERE float_val > 3.14159 AND int_val > 42');
+    }
 }

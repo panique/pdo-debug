@@ -42,11 +42,15 @@ class PdoDebugger
 
             // bring parameter into human-readable format
             if (is_string($value)) {
-                $values[$key] = "'" . addslashes($value) . "'";
+                $values[] = "'" . addslashes($value) . "'";
+            } elseif(is_int($value)) {
+                $values[] = strval($value);
+            } elseif (is_float($value)) {
+                $values[] = strval($value);
             } elseif (is_array($value)) {
-                $values[$key] = implode(',', $value);
+                $values[] = implode(',', $value);
             } elseif (is_null($value)) {
-                $values[$key] = 'NULL';
+                $values[] = 'NULL';
             }
         }
         if ($isNamedMarkers) {
