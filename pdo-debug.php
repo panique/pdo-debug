@@ -30,7 +30,7 @@ class PdoDebugger
 
             // bring parameter into human-readable format
             if (is_string($value)) {
-                $values[$key] = "'" . $value . "'";
+                $values[$key] = "'" . addslashes($value) . "'";
             } elseif (is_array($value)) {
                 $values[$key] = implode(',', $value);
             } elseif (is_null($value)) {
