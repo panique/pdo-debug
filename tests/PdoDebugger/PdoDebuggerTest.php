@@ -50,7 +50,6 @@ class PdoDebuggerTest extends PHPUnit_Framework_TestCase
             'email' => 'john.doe@example.com',
         );
         $res = PdoDebugger::show($sql, $params);
-        echo $res;
         $this->assertEquals($res, 'INSERT INTO users(login, password, email) VALUES (\'jdoe\', \'p4$$w0rd\', \'john.doe@example.com\')');
     }
 }
