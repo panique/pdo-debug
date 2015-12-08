@@ -23,7 +23,7 @@ class PdoDebugger
 
             // check if named parameters (':param') or anonymous parameters ('?') are used
             if (is_string($key)) {
-                $keys[] = '/:'.$key.'/';
+                $keys[] = '/:'.ltrim($key, ':').'/';
             } else {
                 $keys[] = '/[?]/';
             }
@@ -37,7 +37,6 @@ class PdoDebugger
                 $values[$key] = 'NULL';
             }
         }
-
         $raw_sql = preg_replace($keys, $values, $raw_sql, 1, $count);
 
         return $raw_sql;
