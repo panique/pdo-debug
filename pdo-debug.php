@@ -51,7 +51,11 @@ class PdoDebugger
                 $values[] = implode(',', $value);
             } elseif (is_null($value)) {
                 $values[] = 'NULL';
-            }
+            } elseif (is_bool($value)) {
+				$values[] = strval($value);
+			} else {
+				$values[] = strval($value);
+			}
         }
         if ($isNamedMarkers) {
             return preg_replace($keys, $values, $raw_sql);
