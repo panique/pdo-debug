@@ -52,10 +52,10 @@ class PdoDebugger
             } elseif (is_null($value)) {
                 $values[] = 'NULL';
             } elseif (is_bool($value)) {
-				$values[] = strval($value);
-			} else {
-				$values[] = strval($value);
-			}
+                $values[] = strval($value);
+            } else {
+                $values[] = strval($value);
+            }
         }
         if ($isNamedMarkers) {
             return preg_replace($keys, $values, $raw_sql);
