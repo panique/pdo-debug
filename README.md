@@ -75,4 +75,6 @@ Yeah!
 
 ## Support the project (and others)
 
-Support this project - and others - by renting a server at [Host1Plus](https://affiliates.host1plus.com/ref/devmetal/36f4d828.html). Thanks!
+Support the project by renting a server at [DigitalOcean](https://www.digitalocean.com/?refcode=40d978532a20) or just tipping a coffee at BuyMeACoffee.com. Thanks! :)
+
+<a href="https://www.buymeacoffee.com/panique" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
